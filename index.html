@@ -16,7 +16,7 @@
 <body>
   
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <input class="form-control" id="myInput" type="text" placeholder="Pesquisar">
   </nav>
 <div class="container">
   <h1>Matéria do Curso</h1>
@@ -34,7 +34,7 @@
 $(document).ready(function(){
   $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#myDIV *").filter(function() {
+    $("#myList li").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
