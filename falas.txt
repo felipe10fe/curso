@@ -1,0 +1,10 @@
+[João]
+Um novo golpe em disseminação por usuários do WhatsApp está fazendo milhares de vítimas no Brasil. De acordo com o laboratório de segurança dedicado ao cibercrime da PSafe, somente entre os usuários do app DFNDR Security, mais de 140 mil pessoas foram enganadas nas últimas 24 horas. A fraude utiliza uma promoção real da marca O Boticário para convencer os usuários a ativar o sistema de notificações de seus navegadores mobile para um site malicioso.
+
+[Lucas]
+Apesar de a PSafe ter contabilizado 140 mil pessoas que poderiam ter caído no golpe caso não tivessem seu app de segurança instalado, podemos imaginar que a cifra real de vítimas pode atingir a casa das dezenas de milhões de usuários do WhatsApp no Brasil. Isso porque a grande maioria das pessoas não possui nenhum app que consiga identificar fraudes desse tipo e também existem usuários de outras soluções similares que não estão contabilizados. Em outras palavras, o golpe pode ter enganado uma verdadeira multidão.
+
+[Felipe]
+Ao clicar na armadilha, a vítima precisa responder se de fato gostaria de receber uma amostra grátis do novo creme da marca. Ao responder “Sim, claro”, ao invés de apenas confirmar seu interesse ela estará, na verdade, concedendo a permissão para "receber notificações" futuras do hacker, que podem ser utilizadas posteriormente para realizar outros golpes.
+
+Em seguida, é solicitado que a vítima responda a três perguntas: “Você já fez compras na O Boticário este ano?”, “Já usou o nosso site para efetuar compras?”, “Recomendaria O Boticário a um amigo ou membro da família?”. Independente das respostas concedidas, o usuário é encaminhado para uma página que solicita o compartilhamento da falsa promoção com amigos no WhatsApp.
