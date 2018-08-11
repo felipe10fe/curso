@@ -6,10 +6,24 @@ Hospedagem > Servidor : R$20
 
 
 1) Defina domínio?
+é um nome que serve para localizar e identificar conjuntos de computadores na internet.
 
 2) Quanto custa em média uma hospedagem de site?
+R$20
 
 3) Onde devo fazer o registro de um domínio?
+https://registro.br/
 
-4) Cite um exemplo que realiza hospedagem de site?
+4) Cite um exemplo de empresa que realiza hospedagem de site?
+nic.br
 
+5) Defina site?
+local na Internet identificado por um nome de domínio
+
+6) Qual programa que pode ser usado para criar um site?
+Visual code / NotePad++
+
+7) O que significa H T M L ?
+HyperText Markup Language é Linguagem de Marcação de Hipertexto
+
+8) 
