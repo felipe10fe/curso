@@ -1,5 +1,15 @@
-Domínio > Exemplo : www.ceibr.com.br
+Domínio > Exemplo : www.ceibr.com.br : r$40
 
-Site > conjunto de arquivos
+Site > conjunto de arquivos : R$500
 
-Hospedagem > Servidor
+Hospedagem > Servidor : R$20
+
+
+1) Defina domínio?
+
+2) Quanto custa em média uma hospedagem de site?
+
+3) Onde devo fazer o registro de um domínio?
+
+4) Cite um exemplo que realiza hospedagem de site?
+
