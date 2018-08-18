@@ -7,7 +7,7 @@ Hospedagem > Servidor : R$20
 
 1) Defina domínio?
 é um nome que serve para localizar e identificar conjuntos de computadores na internet.
-R: Endereço eletronico.
+R: Endereço eletrônico.
 
 2) Quanto custa em média uma hospedagem de site?
 R$20
@@ -19,7 +19,7 @@ R: registro.br
 
 4) Cite um exemplo de empresa que realiza hospedagem de site?
 nic.br
-R: 
+R: nic.br
 
 5) Defina site?
 local na Internet identificado por um nome de domínio.
