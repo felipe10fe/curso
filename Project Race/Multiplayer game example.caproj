@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Multiplayer game example</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>11p9kixz7scmw</unique-id>
+    <saved-with-version>26100</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Tilemap" version="1">Tilemap</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Car" version="1">Car</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>720</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D web</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="Login screen">
+            <object-type name="JoinButton" sid="1468454303974339">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="Title" sid="8010562696573082">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="NameTextBox" sid="7734770936964156">
+                <plugin id="TextBox" />
+            </object-type>
+            <object-type name="FormLabel" sid="6727226572753588">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="ViewTutorial" sid="6894459090786853">
+                <plugin id="Button" />
+            </object-type>
+        </object-folder>
+        <object-folder name="Game">
+            <object-type name="AimSpot" sid="5367249510645388">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Peer</type>
+                    <type>PeerName</type>
+                    <type>AimSpot</type>
+                    <type>PeerLaser</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4688064039399014" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.222222" y="0.222222" />
+                                <point x="0.5" y="0.111111" />
+                                <point x="0.777778" y="0.222222" />
+                                <point x="0.888889" y="0.5" />
+                                <point x="0.777778" y="0.777778" />
+                                <point x="0.5" y="0.888889" />
+                                <point x="0.222222" y="0.777778" />
+                                <point x="0.111111" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="HostIndicator" sid="1225139214409685">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="NetStats" sid="7872346465716915">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Peer" sid="9680992601730884">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="peerid" sid="2040649148875527" type="string" />
+                    <instance-variable name="lookatx" sid="252179545024477" type="number" />
+                    <instance-variable name="lookaty" sid="7875672039869166" type="number" />
+                    <instance-variable name="inputs" sid="7193520477676959" type="number" />
+                    <instance-variable name="health" sid="7889077929084364" type="number" />
+                    <instance-variable name="wins" sid="948642478485491" type="number" />
+                    <instance-variable name="kills" sid="7316904981992262" type="number" />
+                    <instance-variable name="deaths" sid="5714395402371372" type="number" />
+                    <instance-variable name="FirstShot" sid="90044639766638" type="boolean" />
+                    <instance-variable name="lasthitbypeerid" sid="6358509132487602" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="Car" sid="983512838872524">
+                        <behavior id="Car" />
+                    </behavior-type>
+                    <behavior-type name="8Direction" sid="9740459457043169">
+                        <behavior id="EightDir" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="2087010186585071">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="Solid" sid="919537162761707">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <container>
+                    <type>Peer</type>
+                    <type>PeerName</type>
+                    <type>AimSpot</type>
+                    <type>PeerLaser</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8757907285038088" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.498741">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.498741" />
+                            <collision-poly>
+                                <point x="0.0575" y="0.115869" />
+                                <point x="0.5" y="0.0806045" />
+                                <point x="0.9325" y="0.13602" />
+                                <point x="1" y="0.498741" />
+                                <point x="0.9325" y="0.86398" />
+                                <point x="0.5" y="0.919395" />
+                                <point x="0.0575" y="0.884131" />
+                                <point x="0" y="0.498741" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PeerLaser" sid="8723584082822782">
+                <plugin id="Sprite" />
+                <container>
+                    <type>Peer</type>
+                    <type>PeerName</type>
+                    <type>AimSpot</type>
+                    <type>PeerLaser</type>
+                </container>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5539788048392851" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PeerName" sid="8558169904638055">
+                <plugin id="Text" />
+                <container>
+                    <type>Peer</type>
+                    <type>PeerName</type>
+                    <type>AimSpot</type>
+                    <type>PeerLaser</type>
+                </container>
+            </object-type>
+            <object-type name="LogText" sid="9807058034727937">
+                <plugin id="Text" />
+            </object-type>
+            <object-type global="1" name="LogMessages" sid="7120908255200915">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type name="ChatSend" sid="6462076032507354">
+                <plugin id="Button" />
+            </object-type>
+            <object-type name="ChatTextBox" sid="1379456397422598">
+                <plugin id="TextBox" />
+            </object-type>
+        </object-folder>
+        <object-type name="Multiplayer" sid="3325403568138769">
+            <plugin id="Multiplayer" />
+        </object-type>
+        <object-type name="Mouse" sid="3522564967722714">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Keyboard" sid="9237758063730793">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="Function" sid="3957817719758575">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Browser" sid="9630530190288802">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Sprite" sid="874303772121666">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="936421754976359" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="grama" sid="192925090110624">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Bau\Project Race\tilemap1.png" />
+            <tiles />
+        </object-type>
+        <object-type name="camada1" sid="955092112423254">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Bau\Project Race\tilemap2.png" />
+            <tiles />
+        </object-type>
+        <object-type name="camada2" sid="412566897318157">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Bau\Project Race\tilemap2.png" />
+            <tiles>
+                <tile id="875">
+                    <collision-poly>
+                        <point x="0" y="0.0078125" />
+                        <point x="1" y="0" />
+                        <point x="1" y="1" />
+                        <point x="0" y="1" />
+                    </collision-poly>
+                </tile>
+            </tiles>
+        </object-type>
+        <object-type name="colision" sid="936980677553420">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="141688769207965">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="285081443249781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chegada" sid="400497203768205">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614883451332056" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="AimSpotFamily" plugin-id="Sprite" sid="4858349354391145">
+            <members>
+                <member>AimSpot</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Login.xml</layout>
+        <layout>Game.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Game events.xml</event-sheet>
+        <event-sheet>Login events.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Multiplayer" uid="2" />
+        <global-instance type="Mouse" uid="11" />
+        <global-instance type="Keyboard" uid="15" />
+        <global-instance type="Function" uid="30" />
+        <global-instance type="Browser" uid="9" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

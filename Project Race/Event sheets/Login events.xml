@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Login events</name>
+    <events>
+        <comment>The alias to pass to the next layout.</comment>
+        <variable comment="Name entered on login screen" constant="0" name="MyUsername" sid="2622484095485436" static="0" type="text"></variable>
+        <event-block sid="2836949466833005">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6126620317071436" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Set focused" sid="9867701037124423" type="NameTextBox" />
+            </actions>
+            <sub-events>
+                <comment>If multiplayer is not supported by this browser, indicate this on the login screen.</comment>
+                <event-block sid="1179364240431432">
+                    <conditions>
+                        <condition id="12" inverted="1" name="Supports multiplayer" sid="2198745088043849" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="4781376075840142" type="Title">
+                            <param id="0" name="Text">&quot;Multiplayer not supported&quot;</param>
+                        </action>
+                        <action id="4" name="Set font color" sid="2094524088918796" type="Title">
+                            <param id="0" name="Color">rgb(255, 0, 0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Make the &apos;Join&apos; button disabled if the entered name is empty, so the user cannot try to join without first entering a name.</comment>
+        <event-block sid="4183836433052302">
+            <conditions>
+                <condition id="1" name="On text changed" sid="7534354610094868" type="NameTextBox" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7550250181372236">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="9031337259178081" type="NameTextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="8651540193189224" type="JoinButton">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="297632502846597">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="317397003200696" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="3" name="Set enabled" sid="3601060704976601" type="JoinButton">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>When clicking &apos;Join&apos; or pressing enter with a non-empty name, store the entered name in the global variable and go to the Game layout which will then try to connect.</comment>
+        <event-block any="1" sid="2250300775226276">
+            <conditions>
+                <condition id="0" name="On clicked" sid="281406848246412" type="JoinButton" />
+                <condition id="0" name="On key pressed" sid="2494264979247668" type="Keyboard">
+                    <param id="0" name="Key">13</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="4386750916393495">
+                    <conditions>
+                        <condition id="0" inverted="1" name="Compare text" sid="5037371393004393" type="NameTextBox">
+                            <param id="0" name="Text">&quot;&quot;</param>
+                            <param id="1" name="Case">0</param>
+                        </condition>
+                        <condition id="12" name="Supports multiplayer" sid="1583940091524849" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="383394030999022" type="System">
+                            <param id="0" name="Variable">MyUsername</param>
+                            <param id="1" name="Value">NameTextBox.Text</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6347285549464009" type="System">
+                            <param id="0" name="Layout">Game</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="1728880110743534">
+            <conditions>
+                <condition id="0" name="On clicked" sid="7637827391336329" type="ViewTutorial" />
+            </conditions>
+            <actions>
+                <action id="8" name="Open URL in new window" sid="6070447773137408" type="Browser">
+                    <param id="0" name="URL">&quot;https://www.scirra.com/tutorials/915/multiplayer-tutorial-3-real-time-game&quot;</param>
+                    <param id="1" name="Tag">&quot;NewWindow&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
