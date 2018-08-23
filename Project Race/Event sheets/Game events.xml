@@ -583,6 +583,65 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <comment>colision</comment>
+                        <event-block sid="377999772906111">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="819159195150639" type="Peer">
+                                    <param id="0" name="Object">chegada</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="579811306248591" type="Peer">
+                                    <param id="0" name="Instance variable">peerid</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="181670318256576" type="System">
+                                    <param id="0" name="Object">Peer</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="324366557648068" type="Peer">
+                                    <param id="0" name="Instance variable">wins</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="721803081029443" type="Function">
+                                    <param id="0" name="Name">&quot;AddLog&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Winner &quot;&amp;Multiplayer.MyAlias</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="603901074999680" type="Peer">
+                                    <param id="0" name="X">32</param>
+                                    <param id="1" name="Y">360</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="625999069201691">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="143578111640817" type="Peer">
+                                    <param id="0" name="Object">chegada</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="912721536171802" type="Peer">
+                                    <param id="0" name="Instance variable">peerid</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">Multiplayer.PeerID</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="480530434687543" type="System">
+                                    <param id="0" name="Object">Peer</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="182134231606310" type="Peer">
+                                    <param id="0" name="Instance variable">wins</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="956936504401836" type="Function">
+                                    <param id="0" name="Name">&quot;AddLog&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Winner &quot;&amp;Multiplayer.PeerAlias</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="792948022501410" type="Peer">
+                                    <param id="0" name="X">32</param>
+                                    <param id="1" name="Y">360</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-group>
                 <event-group description="Events specific to the host." inactive="1" sid="5993157518437331" title="Host">
@@ -1018,42 +1077,63 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block sid="243361340338646">
-                            <conditions>
-                                <condition id="0" name="On function" sid="644273689184484" type="Function">
-                                    <param id="0" name="Name">&quot;AddToWins&quot;</param>
-                                </condition>
-                                <condition id="-7" name="Compare instance variable" sid="130903406686448" type="Peer">
-                                    <param id="0" name="Instance variable">peerid</param>
-                                    <param id="1" name="Comparison">0</param>
-                                    <param id="2" name="Value">Function.Param(0)</param>
-                                </condition>
-                            </conditions>
-                            <actions>
-                                <action id="-11" name="Add to" sid="309261544827408" type="Peer">
-                                    <param id="0" name="Instance variable">wins</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
-                                <action id="0" name="Call function" sid="799256666376028" type="Function">
-                                    <param id="0" name="Name">&quot;AddLog&quot;</param>
-                                    <param id="1" name="Parameter {n}">&quot;Winner &quot;&amp;Multiplayer.PeerAlias</param>
-                                </action>
-                                <action id="-3" name="Set position" sid="551194985309630" type="Peer">
-                                    <param id="0" name="X">32</param>
-                                    <param id="1" name="Y">360</param>
-                                </action>
-                            </actions>
-                        </event-block>
+                        <comment>colision</comment>
                         <event-block sid="179230088384763">
                             <conditions>
                                 <condition id="0" name="On collision with another object" sid="543442623878522" type="Peer">
                                     <param id="0" name="Object">chegada</param>
                                 </condition>
+                                <condition id="-7" name="Compare instance variable" sid="716312398471935" type="Peer">
+                                    <param id="0" name="Instance variable">peerid</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="604881036224017" type="System">
+                                    <param id="0" name="Object">Peer</param>
+                                </condition>
                             </conditions>
                             <actions>
-                                <action id="0" name="Call function" sid="790835782898053" type="Function">
-                                    <param id="0" name="Name">&quot;AddToWins&quot;</param>
-                                    <param id="1" name="Parameter {n}">Peer.wins</param>
+                                <action id="-11" name="Add to" sid="257123003159624" type="Peer">
+                                    <param id="0" name="Instance variable">wins</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="674064025403050" type="Function">
+                                    <param id="0" name="Name">&quot;AddLog&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Winner3 &quot;&amp;Multiplayer.MyAlias</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="611213116495166" type="Peer">
+                                    <param id="0" name="X">32</param>
+                                    <param id="1" name="Y">360</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <comment>colision</comment>
+                        <event-block sid="798861396260246">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="133257427435450" type="Peer">
+                                    <param id="0" name="Object">chegada</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="143747972334175" type="Peer">
+                                    <param id="0" name="Instance variable">peerid</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                                <condition id="-11" name="For Each" sid="310401158077196" type="System">
+                                    <param id="0" name="Object">Peer</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="304719418963631" type="Peer">
+                                    <param id="0" name="Instance variable">wins</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="890446301380042" type="Function">
+                                    <param id="0" name="Name">&quot;AddLog&quot;</param>
+                                    <param id="1" name="Parameter {n}">&quot;Winner &quot;&amp;Multiplayer.PeerAlias</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="558999468567517" type="Peer">
+                                    <param id="0" name="X">32</param>
+                                    <param id="1" name="Y">360</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -1283,7 +1363,12 @@
                                     <param id="0" name="Object">colision</param>
                                 </condition>
                             </conditions>
-                            <actions />
+                            <actions>
+                                <action id="-12" name="Subtract from" sid="607915201591013" type="Peer">
+                                    <param id="0" name="Instance variable">health</param>
+                                    <param id="1" name="Value">5</param>
+                                </action>
+                            </actions>
                         </event-block>
                     </sub-events>
                 </event-group>

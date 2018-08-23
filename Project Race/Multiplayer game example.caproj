@@ -258,6 +258,16 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Tilemap" sid="824600324760238">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Bau\Project Race\tilemap1.png" />
+            <tiles />
+        </object-type>
+        <object-type name="camada22" sid="249150739489070">
+            <plugin id="Tilemap" />
+            <texture original-source="D:\Bau\Project Race\tilemap1.png" />
+            <tiles />
+        </object-type>
     </object-folder>
     <families>
         <family name="AimSpotFamily" plugin-id="Sprite" sid="4858349354391145">
