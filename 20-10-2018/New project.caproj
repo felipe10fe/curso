@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2y30xpdrfwtoj</unique-id>
+    <saved-with-version>25600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="personagem" sid="200890047960504">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="236802216846296">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="326680798578981">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="5" loop="1" name="parado" pingpong="0" repeatcount="1" repeatto="0" sid="816535725289845" speed="8">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503226" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Idle\cuphead_idle_0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Idle\cuphead_idle_0002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Idle\cuphead_idle_0003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503497" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Idle\cuphead_idle_0004.png" />
+                    <frame duration="1" hotspotX="0.505155" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Idle\cuphead_idle_0005.png" />
+                </animation>
+                <animation framecount="18" loop="1" name="correndo" pingpong="0" repeatcount="1" repeatto="0" sid="916709979682185" speed="15">
+                    <frame duration="1" hotspotX="0.503704" hotspotY="0.503226" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503356" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0002.png" />
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.503185" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0003.png" />
+                    <frame duration="1" hotspotX="0.504587" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0010.png" />
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.503356" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0011.png" />
+                    <frame duration="1" hotspotX="0.504348" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503448" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0015.png" />
+                    <frame duration="1" hotspotX="0.50365" hotspotY="0.503268" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_0016.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_turnaround_0001.png" />
+                    <frame duration="1" hotspotX="0.504" hotspotY="0.5" original-source="C:\Users\Aluno\Desktop\20-10-2018\Cuphead\Run\Normal\cuphead_run_turnaround_0002.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="background" sid="952983565518889">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="469346186542173" speed="5">
+                    <frame duration="1" hotspotX="0.510463" hotspotY="0.514586" original-source="C:\Users\Aluno\Downloads\101193.png">
+                        <collision-poly>
+                            <point x="0.277743" y="0" />
+                            <point x="0.632847" y="0" />
+                            <point x="0.868738" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="0.998833" />
+                            <point x="0" y="0.998833" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="solid" sid="480981942587815">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="728594966260445">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="866118612043239" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="304914672835461">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="coin" sid="715145152850310">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="16" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="780020693097588" speed="10">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.50152" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="275508048801001">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite" sid="482772612799078">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="800920584882637">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="15" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="132728309265781" speed="5">
+                    <frame duration="1" hotspotX="0.349624" hotspotY="0.976959" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.0413534" y="0.0253456" />
+                            <point x="0.5" y="0.172811" />
+                            <point x="0.654136" y="0.0230415" />
+                            <point x="0.586466" y="0.5" />
+                            <point x="0.511278" y="0.700461" />
+                            <point x="0.5" y="0.976959" />
+                            <point x="0.244361" y="0.85023" />
+                            <point x="0.240602" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.381356" hotspotY="0.988345" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.0423729" y="0.02331" />
+                            <point x="0.5" y="0.219114" />
+                            <point x="0.699152" y="0.011655" />
+                            <point x="0.661017" y="0.498834" />
+                            <point x="0.5" y="0.724942" />
+                            <point x="0.5" y="0.974359" />
+                            <point x="0.207627" y="0.885781" />
+                            <point x="0.262712" y="0.498834" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.530612" hotspotY="0.989529" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.280612" y="0.143979" />
+                            <point x="0.5" y="0.0811518" />
+                            <point x="0.928571" y="0.0366492" />
+                            <point x="0.821429" y="0.5" />
+                            <point x="0.714286" y="0.853403" />
+                            <point x="0.5" y="0.971204" />
+                            <point x="0.341837" y="0.824607" />
+                            <point x="0.188776" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482759" hotspotY="0.977901" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.192118" y="0.107735" />
+                            <point x="0.497537" y="0.381215" />
+                            <point x="0.773399" y="0.127072" />
+                            <point x="0.921182" y="0.5" />
+                            <point x="0.660098" y="0.809392" />
+                            <point x="0.497537" y="0.972376" />
+                            <point x="0.330049" y="0.814917" />
+                            <point x="0.0295567" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480952" hotspotY="0.971429" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.257143" y="0.154286" />
+                            <point x="0.5" y="0.574286" />
+                            <point x="0.790476" y="0.125714" />
+                            <point x="0.885714" y="0.5" />
+                            <point x="0.685714" y="0.811429" />
+                            <point x="0.5" y="0.965714" />
+                            <point x="0.271429" y="0.837143" />
+                            <point x="0.142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.970833" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.240385" y="0.208333" />
+                            <point x="0.5" y="0.316667" />
+                            <point x="0.759615" y="0.208333" />
+                            <point x="0.581731" y="0.5" />
+                            <point x="0.783654" y="0.8125" />
+                            <point x="0.5" y="0.933333" />
+                            <point x="0.1875" y="0.8375" />
+                            <point x="0.293269" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.481132" hotspotY="0.94152" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.235849" y="0.292398" />
+                            <point x="0.5" y="0.0935673" />
+                            <point x="0.806604" y="0.239766" />
+                            <point x="0.773585" y="0.497076" />
+                            <point x="0.740566" y="0.678363" />
+                            <point x="0.5" y="0.900585" />
+                            <point x="0.20283" y="0.748538" />
+                            <point x="0.188679" y="0.497076" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.472477" hotspotY="0.946429" original-source="C:\Users\Aluno\Desktop\20-10-2018\trap.png">
+                        <collision-poly>
+                            <point x="0.270642" y="0.526786" />
+                            <point x="0.5" y="0.633929" />
+                            <point x="0.793578" y="0.401786" />
+                            <point x="0.766055" y="0.5" />
+                            <point x="0.5" y="0.848214" />
+                            <point x="0.261468" y="0.491071" />
+                            <point x="0.266055" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.481132" hotspotY="0.94152">
+                        <collision-poly>
+                            <point x="0.235849" y="0.292398" />
+                            <point x="0.5" y="0.0935673" />
+                            <point x="0.806604" y="0.239766" />
+                            <point x="0.773585" y="0.497076" />
+                            <point x="0.740566" y="0.678363" />
+                            <point x="0.5" y="0.900585" />
+                            <point x="0.20283" y="0.748538" />
+                            <point x="0.188679" y="0.497076" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480769" hotspotY="0.970833">
+                        <collision-poly>
+                            <point x="0.240385" y="0.208333" />
+                            <point x="0.5" y="0.316667" />
+                            <point x="0.759615" y="0.208333" />
+                            <point x="0.581731" y="0.5" />
+                            <point x="0.783654" y="0.8125" />
+                            <point x="0.5" y="0.933333" />
+                            <point x="0.1875" y="0.8375" />
+                            <point x="0.293269" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.480952" hotspotY="0.971429">
+                        <collision-poly>
+                            <point x="0.257143" y="0.154286" />
+                            <point x="0.5" y="0.574286" />
+                            <point x="0.790476" y="0.125714" />
+                            <point x="0.885714" y="0.5" />
+                            <point x="0.685714" y="0.811429" />
+                            <point x="0.5" y="0.965714" />
+                            <point x="0.271429" y="0.837143" />
+                            <point x="0.142857" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.482759" hotspotY="0.977901">
+                        <collision-poly>
+                            <point x="0.192118" y="0.107735" />
+                            <point x="0.497537" y="0.381215" />
+                            <point x="0.773399" y="0.127072" />
+                            <point x="0.921182" y="0.5" />
+                            <point x="0.660098" y="0.809392" />
+                            <point x="0.497537" y="0.972376" />
+                            <point x="0.330049" y="0.814917" />
+                            <point x="0.0295567" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.530612" hotspotY="0.989529">
+                        <collision-poly>
+                            <point x="0.280612" y="0.143979" />
+                            <point x="0.5" y="0.0811518" />
+                            <point x="0.928571" y="0.0366492" />
+                            <point x="0.821429" y="0.5" />
+                            <point x="0.714286" y="0.853403" />
+                            <point x="0.5" y="0.971204" />
+                            <point x="0.341837" y="0.824607" />
+                            <point x="0.188776" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.381356" hotspotY="0.988345">
+                        <collision-poly>
+                            <point x="0.0423729" y="0.02331" />
+                            <point x="0.5" y="0.219114" />
+                            <point x="0.699152" y="0.011655" />
+                            <point x="0.661017" y="0.498834" />
+                            <point x="0.5" y="0.724942" />
+                            <point x="0.5" y="0.974359" />
+                            <point x="0.207627" y="0.885781" />
+                            <point x="0.262712" y="0.498834" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.349624" hotspotY="0.976959">
+                        <collision-poly>
+                            <point x="0.0413534" y="0.0253456" />
+                            <point x="0.5" y="0.172811" />
+                            <point x="0.654136" y="0.0230415" />
+                            <point x="0.586466" y="0.5" />
+                            <point x="0.511278" y="0.700461" />
+                            <point x="0.5" y="0.976959" />
+                            <point x="0.244361" y="0.85023" />
+                            <point x="0.240602" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="403404893152567">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Button" sid="915018053821192">
+            <plugin id="Button" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Game.xml</layout>
+        <layout>GG.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="5" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

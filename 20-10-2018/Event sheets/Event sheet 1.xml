@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="pontos" sid="167533466263726" static="0" type="number">0</variable>
+        <event-block sid="920710253868436">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="985029623106692" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="109943851145347" type="personagem">
+                    <param id="0" name="Animation">&quot;correndo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="146409756206417" type="personagem">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="499219664764032">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="150527854208740" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="257377717486965" type="personagem">
+                    <param id="0" name="Animation">&quot;correndo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="362415941881795" type="personagem">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="389217503005446">
+            <conditions>
+                <condition behavior="Platform" id="0" inverted="1" name="Is moving" sid="739415088604954" type="personagem" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="215586831893269" type="personagem">
+                    <param id="0" name="Animation">&quot;parado&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="728130146967344">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="662203376077353" type="personagem">
+                    <param id="0" name="Object">coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="175576828017223" type="coin" />
+                <action id="-10" name="Add to" sid="904228869675405" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="618302707972712">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="325456039902303" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="363193377272800" type="Text">
+                    <param id="0" name="Text">&quot;Pontos :&quot;&amp;pontos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="330218855207419">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="552381605816657" type="personagem">
+                    <param id="0" name="Object">Sprite</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-26" name="Restart layout" sid="379771894119228" type="System" />
+                <action id="-9" name="Set value" sid="284599170185347" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="737559952977495">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="571591120000921" type="System">
+                    <param id="0" name="Variable">pontos</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">13</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-25" name="Go to layout (by name)" sid="167813037149603" type="System">
+                    <param id="0" name="Layout">&quot;GG&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
