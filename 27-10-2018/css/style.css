@@ -1,0 +1,16 @@
+div {
+    column-count: 5;
+}
+
+body {
+    background: #f1f1ff;
+    color: darkviolet;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    text-shadow: 2px 2px 5px red;
+}
