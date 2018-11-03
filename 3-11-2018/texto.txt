@@ -1,0 +1,96 @@
+O que é CSS?
+CSS é uma linguagem de folha de estilos, que tem o papel de tornar uma página apresentável na web, relacionada diretamente com o design e aparência. Ou seja, o CSS é uma camada que se usa para controlar o estilo da sua página da web.
+
+Para entender o que é CSS pense  na decoração da sua página. Utilizando o CSS é possível alterar a cor do texto e do fundo, fonte, espaçamento entre parágrafos, criar tabelas, usar variações de layouts, ajustar imagens para suas respectivas telas e assim por diante. Podemos dizer que toda a parte visual da sua página será definida com o CSS.
+
+O CSS ilustra como os elementos em HTML de um site devem ser apresentados nas telas. De uma forma direta, é o CSS que determina o visual do seu site. Desde o tamanho da fonte até a imagem de fundo, tudo pode ser alterado com o CSS.
+
+Por que cascata? O termo dá-se por causa do método de utilização. É possível usar vários documentos CSS a fim de de se compor o visual da página, cada um com uma regra diferente.
+
+HTML & CSS
+Para resumir, vamos fazer uma analogia para você entender porque vamos falar de HTML em um artigo sobre o que é CSS. Imagine a construção de uma casa.
+
+Na sua casa, o HTML é responsável pela estrutura. Definir quantos cômodos, quantidade de quartos e garagem. Isso acontece com cabeçalho, títulos e parágrafos do seu texto. Para isso servem as linguagens de marcação e você pode saber mais sobre HTML neste artigo.
+
+Depois de pronta, você certamente quer decorar sua casa. Nessa hora você precisará do CSS. É o CSS quem vai determinar quais as cores das paredes, qual estilo da decoração, dos tapetes e das cortinas. Daí, entende-se a decoração da sua página: cor da fonte, quantidade de linhas e colunas, estilo da fonte, layout, efeitos de sombra em botões, animações de elementos e até mesmo profundidade. Para isso serve a linguagem de estilo de camada.
+
+E por último, mas que ainda não vamos aprofundar neste texto, entra a parte automatizada da sua casa. Instalações de facilitadores como aquecedor, ar-condicionado, sistema de música automático ou campainha, que é  para isso que serve a linguagem de programação, como JavaScript, Json, Ruby on Rails, por exemplo.
+
+Como Surgiu?
+A história do CSS começou em 1994 quando Håkon Wium se deparou com uma situação onde, para publicar uma página da web não havia possibilidade de criar um layout similar ao de um jornal de papel. E foi assim que criou-se a linguagem de folha de estilo, para estilizar páginas.
+
+Antes de saber o que é CSS, quando Tim Berners-Lee criou o HTML, esperava que isso chegaria a acontecer, mas não publicou a sintaxe da folha de estilo, que se tornou um problema para cada navegador ao ter que decidir como apresentar as páginas para os usuários.
+
+Havia uma cobrança por parte dos escritores da web sobre a falta de controle da aparência de suas páginas, com um tom de hostilidade entre eles, como podemos notar neste email do programador Marc Adreessen.
+
+Håkon, com ajuda de Bert Bos, publicou o primeiro rascunho de uma Folha de Estilo em camadas e o original ainda está disponível online.
+
+Características do CSS
+O CSS é muito bem recebido pelos navegadores atuais. Chega a ser relativamente fácil aprender e criar um código mais eficiente e clean que se aplique em todas as suas páginas HTML.
+
+Quem usa CSS é capaz de estilizar sua página da mesma forma que programadores modulam códigos de softwares. Isto faz do CSS um novo padrão na criação de páginas web. Os navegadores usam os comandos CSS para alterar a forma como um documento é apresentado.
+
+Benefícios e Vantagens do CSS
+Podemos destacar que os principais benefícios do CSS na construção de páginas são:
+
+Código mais clean que o HTML, que para suprir necessidades e acompanhar a evolução da internet, apresentava soluções por meio de novas tags, poluindo assim o background dos sites.
+Facilidade de manutenção e atualização em todo o documento com apenas uma folha de comando, o que também faz ganhar tempo de trabalho.
+Separação da Folha de Estilo e Folha de Marcação, que permite que escritores e desenvolvedores trabalhem simultaneamente e de forma independente, eliminando a necessidade de criar e aplicar o layout para cada nova página criada.
+Maior possibilidade de formatação que incluem controle do espaçamento, alinhamento e posicionamento na página; autonomia no tamanho de fontes, cores e estilos dos textos; e permite a geração automática de listas ordenadas e não ordenadas, marcações e tabelas.
+Flexibilidade quanto ao tamanho e posicionamento dos elementos que formam uma página. Com CSS é possível solicitar ao navegador qual pixel colocar nesta ou aquela imagem, ou a altura e largura que ela deve mostrar. O mesmo aplica-se ao conteúdo.
+Permite formatar separadamente o conteúdo do site para ser exibido na tela ou para ser impresso.
+Aumento na velocidade do carregamento de páginas pelos navegadores. A capacidade de download da página melhora pois se usa menos código e pela separação de conteúdo e layout.
+Embora ninguém possa afirmar, somando todas estas vantagens, há indícios fortíssimos para o impacto do CSS no ranqueamento das páginas diante dos mecanismos de buscas, ou seja, o CSS pode influenciar diretamente no SEO.
+
+Tantos benefícios tornam o CSS uma ferramenta indispensável por parte dos desenvolvedores na programação de um site.
+
+Limitações do CSS
+O CSS tem alguns limites. Vale a pena citar alguns deles que causam mais impacto na construção de uma página:
+
+Nem todos os browsers suportam todas as especificações das folhas de estilo.
+Não é possível ler um arquivo usando CSS.
+Não interage com Base de dados.
+Não pode solicitar uma página da web.
+Dependendo no nível de sofisticação requer testes de validação.
+Funciona diferente de acordo com cada browser e ainda cada browser pode criar sua própria folha de estilo.
+Como usar CSS
+O CSS vai manter as informações de um documento separadas do estilo em que serão exibidas. Veja um exemplo de um arquivo em CSS.
+
+Imagine que o seu site tem o fundo todo preto, o background, e o conteúdo é escrito em branco, para causar o destaque. Ao invés de criar diversas tags em .html para determinar que o conteúdo seja em branco, <white>, você pode aplicar de forma automática em todas as páginas com uso do CSS.
+
+Como no exemplo abaixo, o primeiro quadro refere-se ao CSS e o segundo é o HTML, já com a classe .bloco-dark.
+O CSS funciona com o sistema de personalização de estilos de três elementos:
+
+Tag (personalização das tags do .html como body, div, li, ul, ol e table).
+#id (adiciona um ID por tag html fazendo uma personalização).
+.classes (é possível adicionar mais de uma classe por tag html).
+E assim, sua formatação estará reunida em um só documento sem ter a necessidade de estruturar página por página, basta apenas adicionar a classe. Veja o resultado.
+E como isso aconteceu? O navegador carrega tanto o arquivo em .html quando o .css, agrupando assim o conteúdo e o estilo da página.
+
+Anatomia de um comando CSS
+O CSS estipula regras para o arquivo em html. Com cada regra é possível estilizar o conteúdo todo ou somente determinados elementos. Por isso entenda, um comando básico é composto por seletor e declarações, que contém propriedade e valor.
+
+SELETOR {PROPRIEDADE: VALOR}
+
+A sintaxe do CSS é muito simples de aprender. O seletor seleciona quais elementos em html receberão a propriedade. Pode ser p (parágrafo) ou o body (corpo da sua página). Já a propriedade pode ser a cor ou algo mais específico como cor do fundo (background). E por último o valor, que determina o valor da propriedade.
+
+Vamos simular um exemplo. Digamos que o objetivo é mudar a fonte de uma tag h1. Para isso podemos usar h1 {font-size: 20px;}
+
+h1 – é o seletor. Neste caso selecionamos o h1.
+font-size – é a declaração que contém  a propriedade (font-size) e o valor é (20px).
+Lista de comandos básicos CSS
+São tantas opções entre seletores, propriedades e valores que pode ser muito difícil para um desenvolvedor lembrar de todos eles apenas confiando na memória. Por isso decidimos criar uma Lista de Comandos Básicos CSS (CSS3 Incluso) que servirá de ajuda para você que está aprendendo sobre o que é CSS.
+
+Nesta lista você encontrará treze páginas de declarações junto com possíveis propriedades. Este documento foi estrategicamente estruturado e dividido em seções para facilitar sua leitura.
+
+Você pode fazer o download da Lista de Comandos CSS em PDF clicando aqui e saiba muito mais sobre o que é CSS.
+
+Diferenças de Folhas de Estilo
+No CSS existem três diferentes maneiras para adicionar os estilos às páginas do seu site. São eles: interno, externo e inline.
+
+Basicamente as definições são:
+
+Interno: o código é colocado na seção <head> de uma determinada página.
+Externo: o código é vinculá-lo a um arquivo .css externo. Dessa forma, quaisquer alterações feitas em um arquivo CSS externo serão refletidas em seu site globalmente.
+Inline: o código é usado para uma tag html específica.
+Para se familiarizar mais com estas maneiras, confira este tutorial com as diferenças entre os estilos CSS. Vale a pena a leitura principalmente para entender o porque o inline não é tão recomendado para construir seu site, além das vantagens e desvantagens de todos eles.
